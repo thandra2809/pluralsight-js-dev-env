@@ -2,7 +2,6 @@
   "name": "pluralsight-js-dev-env",
   "version": "1.0.0",
   "description": "JavaScript development environment Pluralsight course by Cory House",
-
   "scripts": {
     "prestart": "babel-node buildScripts/startMessage.js",
     "start": "npm-run-all --parallel security-check open:src lint:watch test:watch start-mockapi",
@@ -23,13 +22,11 @@
     "postbuild": "babel-node buildScripts/distServer.js",
     "deploy": "surge ./dist"
   },
-
   "author": "SRINIVASA RAO THANDRA",
   "license": "MIT",
   "dependencies": {
     "whatwg-fetch": "1.0.0"
   },
-
   "devDependencies": {
     "babel-cli": "6.16.0",
     "babel-core": "6.17.0",
